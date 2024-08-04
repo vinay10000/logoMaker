@@ -19,7 +19,7 @@ function App() {
           <SideNav selectedIndex={(value) => setSelectedIndex(value)} />
         </div>
         <div className="ml-64 grid grid-cols-1 md:grid-cols-10">
-          <div className="md:col-span-5 bg-green-500 p-5 shadow-md h-screen overflow-auto">
+          <div className="md:col-span-5 bg-teal-300 p-5 shadow-md h-screen overflow-auto">
             {selectedIndex === 0 ? (
               <IconController />
             ) : (
