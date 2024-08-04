@@ -42,7 +42,7 @@ const LogoPreview = ({downloadIcon}) => {
           className="h-full w-full flex items-center justify-center"
           style={{ background: storageValue?.Backgroundcolor, borderRadius: storageValue?.Backgroundrounded }}
         >
-          {storageValue?.icon?.includes('.png')?<img src={"/png/"+storageValue?.icon} className="w-[400px] h-[400px]" style={{transform: `rotate(${storageValue?.Iconrotate}deg)`,height:storageValue?.Iconsize,width:storageValue?.Iconsize}}/>:<Icon name={storageValue?.icon} color={storageValue?.Iconcolor} size={storageValue?.Iconsize} />}
+          {storageValue?.icon?.includes('.png')?<img src={BASE_URL+"/png/"+storageValue?.icon} className="w-[400px] h-[400px]" style={{transform: `rotate(${storageValue?.Iconrotate}deg)`,height:storageValue?.Iconsize,width:storageValue?.Iconsize}}/>:<Icon name={storageValue?.icon} color={storageValue?.Iconcolor} size={storageValue?.Iconsize} />}
           {/* <Icon name={storageValue?.icon} color={storageValue?.Iconcolor} size={storageValue?.Iconsize} /> */}
         </div>
       </div>
